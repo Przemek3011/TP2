@@ -1,0 +1,34 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>104</x><y>502</y><w>168</w><h>64</h></coordinates><panel_attributes>Client
+
+Klasa tworząca gracza</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>264</x><y>158</y><w>168</w><h>56</h></coordinates><panel_attributes>Board
+
+Klasa przechowująca plansze do gry</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>414</y><w>168</w><h>56</h></coordinates><panel_attributes>Server
+
+Klasa tworzaca serwer </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>8</x><y>150</y><w>168</w><h>56</h></coordinates><panel_attributes>UserApplication
+
+Menu Gry</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>296</x><y>510</y><w>240</w><h>56</h></coordinates><panel_attributes>ClientHandler
+
+klasa obslugujaca wszystkich graczy</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>816</x><y>198</y><w>216</w><h>72</h></coordinates><panel_attributes>Place 
+
+Klasa tworząca pojedyncze pole na planszy
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>672</x><y>470</y><w>264</w><h>72</h></coordinates><panel_attributes>Player
+
+Klasa obsługujaca możliwe działania gracza
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>504</x><y>206</y><w>208</w><h>56</h></coordinates><panel_attributes>FactoryBoard
+
+klasa tworząca różne warianty planszy</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>664</x><y>598</y><w>304</w><h>72</h></coordinates><panel_attributes>FactoryPlayer
+
+Klasa tworząca różne warianty gracza (możliwość ruchu itp)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>200</x><y>206</y><w>120</w><h>312</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>100;10;10;370</additional_attributes></element><element><id>Relation</id><coordinates><x>88</x><y>198</y><w>80</w><h>232</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;100;10;270</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>166</y><w>112</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>120;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>206</y><w>120</w><h>320</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;100;380</additional_attributes></element><element><id>Relation</id><coordinates><x>424</x><y>190</y><w>96</w><h>64</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;100;60</additional_attributes></element><element><id>Relation</id><coordinates><x>704</x><y>214</y><w>128</w><h>32</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;20;140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>528</x><y>502</y><w>160</w><h>48</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;40;170;20;180;10</additional_attributes></element><element><id>Relation</id><coordinates><x>808</x><y>534</y><w>88</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;20;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>30</y><w>168</w><h>56</h></coordinates><panel_attributes>Controller 
+
+Klasa nadzorująca rozgrywke
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>328</x><y>78</y><w>80</w><h>88</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>

@@ -1,0 +1,56 @@
+@startuml
+
+actor User
+participant "UserApplication" as UA
+participant "Server" as Server
+participant "Client" as Client
+participant "Board" as Board
+participant "ClientHandler" as ClientHandler
+
+User -> UA: Start Application
+activate UA
+UA -> UA: initGame()
+User -> UA: Enter number of players
+UA -> Server: Start Server (new Thread)
+create Server
+activate Server
+UA -> Server: Send initial setup message
+
+loop for each player
+    UA -> Client: Create Client (new Thread)
+    create Client
+    activate Client
+    UA -> Client: Send initial setup message
+    Client -> Board: Initialize GUI
+    create Board
+    activate Board
+    Client -> Board: Send initial setup message
+    Client -> Server: Connect to Server
+    Server -> ClientHandler: Create new ClientHandler
+    create ClientHandler
+    activate ClientHandler
+    Server -> ClientHandler: Send initial setup message
+    ClientHandler -> Server: Register Client
+end
+
+loop Gameplay
+    ClientHandler -> Client: Send message (e.g., "make your move")
+    Client -> Board: Update Board with message
+    User -> Board: Make a move
+    Board -> Client: Send move to Server
+    Client -> ClientHandler: Forward move
+    ClientHandler -> ClientHandler: Broadcast move to all Clients
+    loop Broadcast to Clients
+        ClientHandler -> Client: Update Board
+        Client -> Board: Display move
+    end
+end
+
+ClientHandler -> ClientHandler: Remove disconnected Clients
+
+User -> UA: Exit Application
+UA -> Server: Stop Server
+Server -> ClientHandler: Disconnect all Clients
+ClientHandler -> Client: Close Connection
+Client -> Board: Close GUI
+@enduml
