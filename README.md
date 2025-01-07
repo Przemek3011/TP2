@@ -1,2 +1,0 @@
-# TP
-chińskie warcaby 
